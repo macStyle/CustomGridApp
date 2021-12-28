@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805DD42E277BC05500339EBD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DD42D277BC05500339EBD /* Constant.swift */; };
+		805DD431277BC08F00339EBD /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 805DD430277BC08F00339EBD /* NukeUI */; };
 		809F7313277B2DB200CA9CFE /* CustomGridAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F7312277B2DB200CA9CFE /* CustomGridAppApp.swift */; };
 		809F7315277B2DB200CA9CFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F7314277B2DB200CA9CFE /* ContentView.swift */; };
 		809F7317277B2DB400CA9CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809F7316277B2DB400CA9CFE /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		805DD42D277BC05500339EBD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		809F730F277B2DB200CA9CFE /* CustomGridApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomGridApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809F7312277B2DB200CA9CFE /* CustomGridAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridAppApp.swift; sourceTree = "<group>"; };
 		809F7314277B2DB200CA9CFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805DD431277BC08F00339EBD /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				809F7312277B2DB200CA9CFE /* CustomGridAppApp.swift */,
 				809F7314277B2DB200CA9CFE /* ContentView.swift */,
+				805DD42D277BC05500339EBD /* Constant.swift */,
 				809F7316277B2DB400CA9CFE /* Assets.xcassets */,
 				809F7318277B2DB400CA9CFE /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CustomGridApp;
+			packageProductDependencies = (
+				805DD430277BC08F00339EBD /* NukeUI */,
+			);
 			productName = CustomGridApp;
 			productReference = 809F730F277B2DB200CA9CFE /* CustomGridApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 809F7306277B2DB100CA9CFE;
+			packageReferences = (
+				805DD42F277BC08F00339EBD /* XCRemoteSwiftPackageReference "NukeUI" */,
+			);
 			productRefGroup = 809F7310277B2DB200CA9CFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				809F7315277B2DB200CA9CFE /* ContentView.swift in Sources */,
 				809F7313277B2DB200CA9CFE /* CustomGridAppApp.swift in Sources */,
+				805DD42E277BC05500339EBD /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		805DD42F277BC08F00339EBD /* XCRemoteSwiftPackageReference "NukeUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/NukeUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		805DD430277BC08F00339EBD /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 805DD42F277BC08F00339EBD /* XCRemoteSwiftPackageReference "NukeUI" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 809F7307277B2DB100CA9CFE /* Project object */;
 }
